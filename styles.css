@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #EAEDF0;
+  color: #5D6063;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-bar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%
+}
+
+.logo {
+  width: 80px;
+}
+
+.cover {
+  position: relative;
+}
+
+.me {
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  width: 700px;
+  margin: auto;
+  margin-top: -50px;
+  text-align: center;
+}
+
+.bio {
+  padding: 20px;
+
+  background-color: #fff;
+
+  border-radius: 25px;
+  margin-top: 50px;
+}
+
+.second {
+  padding: 20px;
+  margin-top: 50px;
+  background-color: #fff;
+  border-radius: 25px;
+
+}
+
+.photo {
+  margin-left: 500px;
+  z-index: 2;
+}
+
+.name {
+  font-size: 40px;
+  color: #fff;
+  padding-top: 30px;
+  padding-right: 30px;
+}
+
+.contacts {
+
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.contacts > a {
+  padding-right: 10px;
+}
+
+.last-heading {
+  text-align: center;
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 415px) {
+  .photo {
+      margin-left: 0px;
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+  }
+  .me {
+    width: auto;
+  }
+  .logo {
+    width: 60px;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .name {
+    font-size: 20px;
+    padding-right: 5px;
+  }
+}
+
+
+@media only screen and (min-width: 416px) and (max-width: 960px) {
+  .photo {
+    margin-left: 0px;
+    display: flex;
+    justify-content: center;
+  }
+  .me {
+    width: 416px;
+  }
+
+@media only screen and (min-width: 671px) and (max-width: 960px) {
+  .name {
+    font-size: 30px;
+  }
+}
